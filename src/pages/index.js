@@ -1,6 +1,11 @@
-import React from "react"
+import React from 'react'
 import SEO from "../components/seo"
 import { motion } from 'framer-motion'
+import Model from "../components/grandeDisco"
+import {Canvas} from "@react-three/fiber"
+import Layout from "../components/layout"
+import { Suspense } from 'react'
+
 
 const duration = 0.35
 
@@ -21,46 +26,40 @@ const item = {
   },
 }
 
-const IndexPage = () => {
-  return (
-    <>
-      <SEO title="Home" />
-      <motion.section
-        variants={container}
-        initial="hidden" 
-        animate="visible"
-        className="container"
-      >
-        <motion.div 
-          className="content"
-          variants={item}
-          transition="easeInOut"
-        >
-          <p className="text-lg md:text-xl pl-3 border-l-2 border-black">An opinionated starter for Gatsby v2 with TailwindCSS, PostCSS and Framer Motion page transitions.</p>
-        </motion.div>
+// function Box(props) {
+//   // This reference will give us direct access to the mesh
+//   const mesh = useRef()
+//   // Set up state for the hovered and active state
+//   const [hovered, setHover] = useState(false)
+//   const [active, setActive] = useState(false)
+//   // Rotate mesh every frame, this is outside of React without overhead
+//   useFrame(() => {
+//     mesh.current.rotation.x = mesh.current.rotation.y += 0.01
+//   })
+//   return (
+//     <mesh
+//       {...props}
+//       ref={mesh}
+//       scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
+//       onClick={(e) => setActive(!active)}
+//       onPointerOver={(e) => setHover(true)}
+//       onPointerOut={(e) => setHover(false)}>
+//       <boxBufferGeometry args={[1, 1, 1]} />
+//       <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
+//     </mesh>
+//   )
+// }
 
-        <motion.div 
-          className="content"
-          variants={item}
-          transition="easeInOut"
-        >
-          <hr className="block my-8" />
-        </motion.div>
 
-        <motion.div 
-          className="content"
-          variants={item}
-          transition="easeInOut"
-        >
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+const IndexPage = () => (
 
-          <h2>Lorem ipsum dolor sit amet</h2>
-          
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </motion.div>
-      </motion.section>
-    </>
+    <Canvas>
+      <ambientLight intensity={0.2} />
+      <Suspense fallback={null}>
+        <Model />
+      </Suspense>
+    </Canvas>
+
   )
-}
-
-export default IndexPage
+  
+  export default IndexPage

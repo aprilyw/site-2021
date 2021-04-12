@@ -36,7 +36,7 @@ const AboutPage = () => {
           variants={item}
           transition="easeInOut"
         >
-          <p className="text-lg md:text-xl pl-3 border-l-2 border-black">Hello from the about page</p>
+          <p className="text-lg md:text-xl pl-3">Hello from the about page</p>
         </motion.div>
 
         <motion.div 
@@ -52,11 +52,11 @@ const AboutPage = () => {
           variants={item}
           transition="easeInOut"
         >
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-          <h2>Lorem ipsum dolor sit amet</h2>
-          
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p> 
+            I'm a twenty-something and recent grad from the University of Chicago, amidst the pandemic. 
+            In my spare time, I'm reading, printmaking, enjoying music, spending time with friends, jewelry making, trying to understand tech + people, collecting diverse life experiences.
+            Here you'll find some thoughts, if you're interested -- I'm just another rando on the internet. Feel free to reach out to me at aprilwang@uchicago.edu.
+          </p>
         </motion.div>
       </motion.section>
     </>
