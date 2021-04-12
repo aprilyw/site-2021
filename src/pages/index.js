@@ -3,7 +3,6 @@ import SEO from "../components/seo"
 import { motion } from 'framer-motion'
 import Model from "../components/grandeDisco"
 import {Canvas} from "@react-three/fiber"
-import Layout from "../components/layout"
 import { Suspense } from 'react'
 
 
@@ -53,8 +52,8 @@ const item = {
 
 const IndexPage = () => (
 
-    <Canvas>
-      <ambientLight intensity={0.2} />
+    <Canvas style={{height: 1000,}} pixelRatio={window.devicePixelRatio}>
+      <ambientLight intensity={0.75} />
       <Suspense fallback={null}>
         <Model />
       </Suspense>

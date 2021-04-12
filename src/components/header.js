@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
     
     <div className="container">
       <div className="flex flex-wrap items-center mb-4">
-        <motion.button
+        {/* <motion.button
           className="w-5 h-5 mr-3 block bg-black rounded"
           animate={{ rotate: 180 }}
           transition={{
@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
             duration: 2,
             ease: "anticipate"
           }}
-        />
+        /> */}
 
         <Link className="font-bold block text-lg md:text-xl inline-block" to="/">
           {siteTitle}

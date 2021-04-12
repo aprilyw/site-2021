@@ -53,9 +53,7 @@ const AboutPage = () => {
           transition="easeInOut"
         >
           <p> 
-            I'm a twenty-something and recent grad from the University of Chicago, amidst the pandemic. 
-            In my spare time, I'm reading, printmaking, enjoying music, spending time with friends, jewelry making, trying to understand tech + people, collecting diverse life experiences.
-            Here you'll find some thoughts, if you're interested -- I'm just another rando on the internet. Feel free to reach out to me at aprilwang@uchicago.edu.
+              Here you'll find some thoughts, if you're interested -- I'm just another rando on the internet. Feel free to reach out to me at aprilwang@uchicago.edu.
           </p>
         </motion.div>
       </motion.section>
