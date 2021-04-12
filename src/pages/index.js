@@ -52,7 +52,7 @@ const item = {
 
 const IndexPage = () => (
 
-    <Canvas style={{height: 1000,}} pixelRatio={window.devicePixelRatio}>
+    <Canvas style={{height: 1000,}}>
       <ambientLight intensity={0.75} />
       <Suspense fallback={null}>
         <Model />
