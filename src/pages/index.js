@@ -3,18 +3,18 @@ import SEO from "../components/seo"
 import Model from "../components/grandedisco"
 import {Canvas} from "@react-three/fiber"
 import { Suspense } from 'react'
-import { OrbitControls } from "@react-three/drei"
+import { OrbitControls, Html } from "@react-three/drei"
 
 const IndexPage = () => {
   return (
   <>
     <SEO title="About" />
     <Canvas style={{height: 1000,}}>
-      <ambientLight intensity={0.75} />
-      <Suspense fallback={null}>
+      <ambientLight intensity={1} />
+      <Suspense fallback={<Html>Loading the Grande Disco...</Html>}>
         <Model />
       </Suspense>
-      <OrbitControls minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} enableZoom={true} enablePan={true} enableRotate={true}/>
+      <OrbitControls minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} enableZoom={true} enablePan={true} autoRotate={true}/>
 
     </Canvas>
   </>
