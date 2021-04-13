@@ -14,7 +14,7 @@ const IndexPage = () => {
       <Suspense fallback={null}>
         <Model />
       </Suspense>
-      <OrbitControls minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} enableZoom={true} enablePan={false} enableRotate={true}/>
+      <OrbitControls minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} enableZoom={true} enablePan={true} enableRotate={true}/>
 
     </Canvas>
   </>

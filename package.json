@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-tailwind-motion",
+  "name": "april-website",
   "private": false,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "My personal website",
   "version": "0.1.0",
-  "author": "Sam Goddard <hello@samgoddard.co.uk>",
+  "author": "April Wang",
   "dependencies": {
     "@react-three/drei": "^4.1.6",
     "@react-three/fiber": "^6.0.10",
