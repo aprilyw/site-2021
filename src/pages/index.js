@@ -1,7 +1,7 @@
 import React from 'react'
 import SEO from "../components/seo"
 import { motion } from 'framer-motion'
-import Model from "../components/grandeDisco"
+import Model from "../components/grandedisco"
 import {Canvas} from "@react-three/fiber"
 import { Suspense } from 'react'
 
