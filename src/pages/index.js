@@ -1,64 +1,24 @@
 import React from 'react'
 import SEO from "../components/seo"
-import { motion } from 'framer-motion'
 import Model from "../components/grandedisco"
 import {Canvas} from "@react-three/fiber"
 import { Suspense } from 'react'
+import { OrbitControls } from "@react-three/drei"
 
-
-const duration = 0.35
-
-const container = {
-  visible: {
-    transition: {
-      when: 'beforeChildren',
-      staggerChildren: 0.2,
-      delayChildren: duration,
-    },
-  },
-}
-const item = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-}
-
-// function Box(props) {
-//   // This reference will give us direct access to the mesh
-//   const mesh = useRef()
-//   // Set up state for the hovered and active state
-//   const [hovered, setHover] = useState(false)
-//   const [active, setActive] = useState(false)
-//   // Rotate mesh every frame, this is outside of React without overhead
-//   useFrame(() => {
-//     mesh.current.rotation.x = mesh.current.rotation.y += 0.01
-//   })
-//   return (
-//     <mesh
-//       {...props}
-//       ref={mesh}
-//       scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
-//       onClick={(e) => setActive(!active)}
-//       onPointerOver={(e) => setHover(true)}
-//       onPointerOut={(e) => setHover(false)}>
-//       <boxBufferGeometry args={[1, 1, 1]} />
-//       <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
-//     </mesh>
-//   )
-// }
-
-
-const IndexPage = () => (
-
+const IndexPage = () => {
+  return (
+  <>
+    <SEO title="About" />
     <Canvas style={{height: 1000,}}>
       <ambientLight intensity={0.75} />
       <Suspense fallback={null}>
         <Model />
       </Suspense>
-    </Canvas>
+      <OrbitControls minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} enableZoom={true} enablePan={false} enableRotate={true}/>
 
+    </Canvas>
+  </>
   )
+}
   
   export default IndexPage
