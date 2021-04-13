@@ -1,7 +1,0 @@
-.container {
-    @apply 
-        mx-auto
-        px-8;
-
-    max-width: theme('screens.lg');
-}
