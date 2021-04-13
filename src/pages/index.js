@@ -8,7 +8,7 @@ import { OrbitControls, Html, useProgress } from "@react-three/drei"
 
 function Loader() {
   const { progress } = useProgress()
-  return <Html center>{progress} % loaded</Html>
+  return <Html center color="black">{progress} % loaded</Html>
 }
 
 const IndexPage = () => {
