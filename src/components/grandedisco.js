@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
-import path from "../static/models/grandeDisco.glb"
+import path from "../static/models/grandeDiscoDraco.gltf"
 
 export default function Model(props) {
   const group = useRef()
@@ -18,3 +18,4 @@ export default function Model(props) {
     </group>
   )
 }
+useGLTF.preload('../static/models/grandeDiscoDraco.gltf')
