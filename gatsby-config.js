@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `April Wang`,
+    title: `April Y Wang`,
     description: `a personal website + portfolio`,
     author: `@aprilyw`,
   },
@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/cattail.png`,
       },
     },
     'react-three-fiber',
