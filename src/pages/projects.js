@@ -1,11 +1,20 @@
 import React from "react"
 import SEO from "../components/seo"
+import { GoLinkExternal } from 'react-icons/go';
+import { Link } from "gatsby"
+
 
 const ProjectsPage = () => (
   <>
     <SEO title="Projects" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div className= "container grid-cols-1">
+    <div>
+        <a className="mx-2 underline hover:text-indigo-400" href="https://www.chicagoaww.com"> Chicago Asian Writers Workshop<GoLinkExternal className="inline-block opacity-25 -mt-3px" /></a>
+    </div>
+    <div>
+        <Link className="mx-2 underline hover:text-indigo-400" to="/coursework/"> Coursework</Link>
+    </div>
+    </div>
   </>
 )
 

@@ -20,19 +20,19 @@ const Nav = class extends React.Component {
       <div className={`navigation-wrapper navigation-wrapper--${menuActive}`} >
         <ul className="md:bg-red md:flex md:w-full md:flex-row md:justify-start md:items-stretch">
           <li>
-            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/">Home</Link>
+            <Link className="hover:text-indigo-600 navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/">Home</Link>
           </li>
           <li>
-            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/about">About</Link>
+            <Link className="hover:text-indigo-600 navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/about">About</Link>
           </li>
           <li>
-            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/projects">Projects</Link>
+            <Link className="hover:text-indigo-600 navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/projects">Projects</Link>
           </li>
           <li>
-            <Link className="navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/sculpture">Sculpture</Link>
+            <Link className="hover:text-indigo-600 navigation-wrapper__link" onClick={this.toggleMenu} activeClassName="is-active" to="/sculpture">Sculpture</Link>
           </li>
           <li>
-            <a target="_blank" rel="noreferrer noopener" onClick={this.toggleMenu} className="navigation-wrapper__link" href="https://github.com/aprilyw">Github <GoLinkExternal className="inline-block opacity-25 -mt-3px" /></a>
+            <a target="_blank" rel="noreferrer noopener" onClick={this.toggleMenu} className="hover:text-indigo-600 navigation-wrapper__link" href="https://github.com/aprilyw">Github <GoLinkExternal className="inline-block opacity-25 -mt-3px" /></a>
           </li>
         </ul>
       </div>
