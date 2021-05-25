@@ -5,7 +5,9 @@ import { Link } from "gatsby"
 const SculpturePage = () => (
   <>
     <SEO title="Sculpture" />
-    <Link to="/grandeDisco/">The Grande Disco</Link>
+    <div className= "container">
+    <Link to="/grandeDisco/"> The Grande Disco</Link>
+    </div>
   </>
 )
 
