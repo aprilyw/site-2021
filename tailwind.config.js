@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         mono: [
+          'Basier Square Mono',
           'IBM Plex Mono',
           'Menlo',
           'Monaco',
