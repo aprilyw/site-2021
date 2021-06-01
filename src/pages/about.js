@@ -51,7 +51,7 @@ const AboutPage = () => {
           This website is intended to be a personal site and collection of works.
           I hope for this namespace to become a sort of haven for myself, perhaps 
           eventually a <a className="underline hover:text-indigo-400" 
-          href="https://tomcritchlow.com/blogchains/digital-gardens/">digital garden</a>. <br/><br/>
+          href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">digital garden</a>. <br/><br/>
           If you've found me here, I'd love to chat -- send me chain letters at aprilwang@uchicago.edu;
           I'm always in search of new friends & chance encounters!
         

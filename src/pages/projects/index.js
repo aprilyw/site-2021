@@ -1,5 +1,5 @@
 import React from "react"
-import SEO from "../components/seo"
+import SEO from "../../components/seo"
 import { GoLinkExternal } from 'react-icons/go';
 import { Link } from "gatsby"
 
@@ -14,6 +14,15 @@ const ProjectsPage = () => (
     <div>
         <Link className="mx-2 underline hover:text-indigo-400" to="/coursework/"> Coursework</Link>
     </div>
+    <div>
+        <Link className="mx-2 underline hover:text-indigo-400" to="/design/"> Design</Link>
+    </div>
+    <div>
+        <Link className="mx-2 underline hover:text-indigo-400" to="/drawings/"> Drawings</Link>
+    </div>
+    {/* <div>
+        <Link className="mx-2 underline hover:text-indigo-400" to="/wiki/"> Wiki</Link>
+    </div> */}
     </div>
   </>
 )
