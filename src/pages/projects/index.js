@@ -20,9 +20,9 @@ const ProjectsPage = () => (
     <div>
         <Link className="mx-2 underline hover:text-indigo-400" to="/drawings/"> Drawings</Link>
     </div>
-    {/* <div>
+    <div>
         <Link className="mx-2 underline hover:text-indigo-400" to="/wiki/"> Wiki</Link>
-    </div> */}
+    </div>
     </div>
   </>
 )

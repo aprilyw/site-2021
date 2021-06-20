@@ -6,7 +6,7 @@ const SculpturePage = () => (
   <>
     <SEO title="Sculpture" />
     <div className= "container">
-    <Link className="mx-2 underline hover:text-indigo-400" to="/grandeDisco/"> The Grande Disco</Link>
+    <a className="mx-2 underline hover:text-indigo-400" href="/grandeDisco/"> The Grande Disco</a>
     </div>
   </>
 )
