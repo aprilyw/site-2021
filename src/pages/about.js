@@ -1,7 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
 import { motion } from 'framer-motion'
-import AprilImg from "../images/IMG_0220.jpeg"
+import { GoLinkExternal } from 'react-icons/go';
 
 const duration = 0.35
 
@@ -39,15 +39,7 @@ const AboutPage = () => {
           variants={item}
           transition="easeInOut"
         >
-          <img className="w-40" src={AprilImg} alt="me" />
-          </motion.div>
-          <motion.div 
-          className="content"
-          variants={item}
-          transition="easeInOut"
-        >
           <p className="w-52 px-4"> 
-          Hello, I'm a recent grad (UChicago '20) and twentysomething. <br/><br/>
           This website is intended to be a personal site and collection of works.
           I hope for this namespace to become a sort of haven for myself, perhaps 
           eventually a <a className="underline hover:text-indigo-400" 
@@ -56,6 +48,11 @@ const AboutPage = () => {
           I'm always in search of new friends & chance encounters!
         
           </p>
+
+          <div>
+          <a target="_blank" rel="noreferrer noopener" className="hover:text-indigo-600 navigation-wrapper__link" href="https://github.com/aprilyw">
+            Github <GoLinkExternal className="inline-block opacity-25 -mt-3px" /></a>
+            </div>
         </motion.div>
         </div>
 

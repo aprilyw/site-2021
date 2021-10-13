@@ -10,7 +10,7 @@ const DrawingsPage = () => {
   <>
     <SEO title="Drawings" />
     <div className="container">
-    <div className="text-gray-300"> under construction .. </div>
+    <div className="text-gray-300"> linocut & sketch </div>
     </div>
 
     <div class="flex flex-wrap overflow-hidden lg:-mx-6 lg:px-24">

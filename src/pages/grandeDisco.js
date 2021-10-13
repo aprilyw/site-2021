@@ -14,13 +14,16 @@ const grandeDiscoPage = () => (
   <>
     <SEO title="The Grande Disco" />
     <div className= "">
+
     <Canvas style={{height: 700,}}>
-    <ambientLight intensity={1.6} />
-    <Suspense fallback={<Loader />}>
-    <Model />
-    </Suspense>
-    <OrbitControls minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} enableZoom={true} enablePan={true} autoRotate={true}/>
+      <ambientLight intensity={2} />
+      <Suspense fallback={<Loader />}>
+      <Model />
+      </Suspense>
+      <OrbitControls minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} enableZoom={true} enablePan={true} autoRotate={true}/>
     </Canvas>
+
+
     <p className="absolute bottom-0 right-0">
         <strong> <i> The Grande Disco</i></strong>, 1968 <br/> 
         Arnaldo Pomodoro <br/>
