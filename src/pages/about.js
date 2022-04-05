@@ -41,19 +41,17 @@ const AboutPage = () => {
         >
           <p className="w-52 px-4"> 
           This website is intended to be a personal site and collection of works.
-          I hope for this namespace to become a sort of haven for myself, perhaps 
-          eventually a <a className="underline hover:text-indigo-400" 
-          href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">digital garden</a>.
-          <br/><br/>
-          If you've found me here, I'd love to chat -- send me chain letters at aprilwang@uchicago.edu;
-          I'm always in search of new friends & chance encounters!
-        
           </p>
 
-          <div>
-          <a target="_blank" rel="noreferrer noopener" className="hover:text-indigo-600 navigation-wrapper__link" href="https://github.com/aprilyw">
+          <p className="w-52 px-4"> 
+          It's definitely a WIP, but so are a lot of things in life.
+          </p>
+
+          <p className="w-52 px-4"> 
+          Seeking roles in Full Stack or Frontend development, potentially with a focus in AI/ML or 3D graphics.
+          </p>
+          <a target="_blank" rel="noreferrer noopener" className="hover:text-indigo-600 navigation-wrapper__link w-52 px-4" href="https://github.com/aprilyw">
             Github <GoLinkExternal className="inline-block opacity-25 -mt-3px" /></a>
-            </div>
         </motion.div>
         </div>
 
