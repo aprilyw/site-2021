@@ -6,8 +6,9 @@
   "author": "April Wang",
   "dependencies": {
     "@react-three/drei": "^4.1.6",
-    "@react-three/fiber": "^6.0.10",
+    "@react-three/fiber": "^6.2.3",
     "framer-motion": "^1.8.4",
+    "framer-motion-3d": "^6.3.0",
     "gatsby": "^2.19.12",
     "gatsby-image": "^2.2.40",
     "gatsby-plugin-manifest": "^2.2.41",

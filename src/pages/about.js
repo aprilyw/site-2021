@@ -47,9 +47,6 @@ const AboutPage = () => {
           It's definitely a WIP, but so are a lot of things in life.
           </p>
 
-          <p className="w-52 px-4"> 
-          Seeking roles in Full Stack or Frontend development, potentially with a focus in AI/ML or 3D graphics.
-          </p>
           <a target="_blank" rel="noreferrer noopener" className="hover:text-indigo-600 navigation-wrapper__link w-52 px-4" href="https://github.com/aprilyw">
             Github <GoLinkExternal className="inline-block opacity-25 -mt-3px" /></a>
         </motion.div>
