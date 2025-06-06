@@ -43,10 +43,6 @@ const AboutPage = () => {
           This website is intended to be a personal site and collection of works.
           </p>
 
-          <p className="w-52 px-4"> 
-          It's definitely a WIP, but so are a lot of things in life.
-          </p>
-
           <a target="_blank" rel="noreferrer noopener" className="hover:text-indigo-600 navigation-wrapper__link w-52 px-4" href="https://github.com/aprilyw">
             Github <GoLinkExternal className="inline-block opacity-25 -mt-3px" /></a>
         </motion.div>
